@@ -1,6 +1,6 @@
 # Ibrat Ibragimov
 
-![Photo](./profile_photo.jpg.jpg) <!-- Upload your professional photo -->
+![Photo](./profile_photo.jpg) <!-- Upload your professional photo -->
 
 **Full-Stack Developer | JavaScript & Python**
 
