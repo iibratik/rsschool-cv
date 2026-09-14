@@ -1,6 +1,6 @@
 # Ibrat Ibragimov
 
-![Photo](./photo.jpg) <!-- Upload your professional photo -->
+![Photo](./profile_photo.jpg.jpg) <!-- Upload your professional photo -->
 
 **Full-Stack Developer | JavaScript & Python**
 
@@ -8,7 +8,7 @@
 
 ## 📋 Contact Information
 
-| Parameter | Value |
+| Info | Value |
 |-----------|-------|
 | **Phone** | +998 77 293 11 25 |
 | **Email** | iibratik17@gmail.com |
@@ -140,7 +140,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 // Handle /start command with deep linking for user registration
 bot.start(async (ctx) => {
   const deepLinkToken = ctx.startPayload;
-  
+
   if (deepLinkToken) {
     try {
       // Generate token in database and link with Telegram user
@@ -149,7 +149,7 @@ bot.start(async (ctx) => {
         telegramUserId: ctx.from.id,
         timestamp: new Date().toISOString(),
       });
-      
+
       ctx.reply(
         '✅ Registration successful! You will now receive shipping notifications.'
       );
@@ -162,12 +162,12 @@ bot.start(async (ctx) => {
 // Handle text messages for order status requests
 bot.on('text', async (ctx) => {
   const orderNumber = ctx.message.text;
-  
+
   try {
     const response = await axios.get(
       `https://api.moysklad.ru/api/remap/1.2/entity/customerorder/${orderNumber}`
     );
-    
+
     ctx.reply(`📦 Order status: ${response.data.state.name}`);
   } catch (error) {
     ctx.reply('❌ Order not found.');
@@ -362,11 +362,11 @@ export default {
 ## 💼 Work Experience
 
 ### Software Integration Specialist | Watson DJ
-**Period:** March 2026 – July 2026  
-**Location:** Tashkent, [watsondj.uz](https://watsondj.uz)  
+**Period:** March 2026 – July 2026
+**Location:** Tashkent, [watsondj.uz](https://watsondj.uz)
 **Industry:** Heating equipment retail / Business automation
 
-**Project:** Warehouse Automation — Telegram + МойСклад (MoySklad) Integration  
+**Project:** Warehouse Automation — Telegram + МойСклад (MoySklad) Integration
 **Technologies:** Node.js, TypeScript, Telegraf, MoySklad API, REST API, PostgreSQL
 
 **Key Achievements:**
@@ -381,11 +381,11 @@ export default {
 ---
 
 ### Technical Support Specialist (L3) | Terranova Software
-**Period:** May 2024 – February 2025  
-**Location:** Tashkent, [terranovasoftware.eu](https://terranovasoftware.eu)  
+**Period:** May 2024 – February 2025
+**Location:** Tashkent, [terranovasoftware.eu](https://terranovasoftware.eu)
 **Industry:** Software vendor — data accounting systems for utility meters
 
-**Project:** Italian Vocabulary Learning App (Duolingo-style)  
+**Project:** Italian Vocabulary Learning App (Duolingo-style)
 **Technologies:** Python, SQL Server, Windows Services, REST API
 
 **Key Achievements:**
@@ -397,11 +397,11 @@ export default {
 ---
 
 ### PR-Webmaster | Instax Uzbekistan
-**Period:** May 2026 – July 2026  
-**Location:** Tashkent, [instax.com.uz](https://instax.com.uz)  
+**Period:** May 2026 – July 2026
+**Location:** Tashkent, [instax.com.uz](https://instax.com.uz)
 **Industry:** E-commerce / Photography products
 
-**Project:** WooCommerce Store Development & Optimization  
+**Project:** WooCommerce Store Development & Optimization
 **Technologies:** WordPress, WooCommerce, Elementor Pro, PHP, CSS3
 
 **Key Achievements:**
@@ -417,8 +417,8 @@ export default {
 ### Personal Projects
 
 #### 🚗 3D Car Tuning Visualizer
-**Description:** Interactive web application for 3D car model visualization and customization. Users can modify components, colors, and parts while seeing real-time results.  
-**Technologies:** Three.js, JavaScript, WebGL, Responsive Design  
+**Description:** Interactive web application for 3D car model visualization and customization. Users can modify components, colors, and parts while seeing real-time results.
+**Technologies:** Three.js, JavaScript, WebGL, Responsive Design
 **Key Features:**
 - Load and visualize 3D car models
 - Change textures and materials of car parts
@@ -426,13 +426,13 @@ export default {
 - Export results (screenshots, configuration)
 - Mobile-responsive design
 
-**GitHub:** [github.com/iibratik/3d_tunung](https://github.com/iibratik/3d_tunung)  
+**GitHub:** [github.com/iibratik/3d_tunung](https://github.com/iibratik/3d_tunung)
 **Status:** Active Development
 
 #### 📚 Course Reminder Bot
-**Period:** August 2026  
-**Description:** Telegram bot for sending study reminders with LLM-based quiz generation and scheduling  
-**Technologies:** Python, aiogram, Ollama (Local LLM), APScheduler, SQLite  
+**Period:** August 2026
+**Description:** Telegram bot for sending study reminders with LLM-based quiz generation and scheduling
+**Technologies:** Python, aiogram, Ollama (Local LLM), APScheduler, SQLite
 **Key Features:**
 - Course reminder scheduling
 - Automatic quiz generation via local LLM
@@ -442,8 +442,8 @@ export default {
 **Status:** Active Development
 
 #### 🤖 Partner Onboarding Bot (Watson DJ)
-**Description:** Automated system for counterparty onboarding using deep links and tokens  
-**Technologies:** Node.js/TypeScript, Telegraf, MoySklad API, PostgreSQL  
+**Description:** Automated system for counterparty onboarding using deep links and tokens
+**Technologies:** Node.js/TypeScript, Telegraf, MoySklad API, PostgreSQL
 **Key Features:**
 - Personal deep-link token generation
 - Automatic Telegram user registration
@@ -453,8 +453,8 @@ export default {
 **Status:** Production (Used in Watson DJ)
 
 #### 🎨 ComfyUI Image Generation Pipeline
-**Description:** Local image generation pipeline using Stable Diffusion on RTX 4070 GPU  
-**Technologies:** Python, ComfyUI, Stable Diffusion, CUDA, WebUI  
+**Description:** Local image generation pipeline using Stable Diffusion on RTX 4070 GPU
+**Technologies:** Python, ComfyUI, Stable Diffusion, CUDA, WebUI
 **Key Features:**
 - Local image generation (no cloud dependency)
 - Custom workflow nodes
@@ -468,8 +468,8 @@ export default {
 ## 🎓 Education
 
 ### IT Park University
-**Period:** 2022 – 2023  
-**Specialization:** Software Engineering  
+**Period:** 2022 – 2023
+**Specialization:** Software Engineering
 **Achievements:** Completed coursework with practical development experience
 
 ### Courses and Training
@@ -543,6 +543,6 @@ export default {
 
 ---
 
-**CV last updated:** September 2026  
-**GitHub Profile:** [github.com/iibratik](https://github.com/iibratik)  
+**CV last updated:** September 2026
+**GitHub Profile:** [github.com/iibratik](https://github.com/iibratik)
 **LinkedIn:** [linkedin.com/in/iibratik](https://linkedin.com/in/iibratik)
